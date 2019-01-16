@@ -22,7 +22,7 @@ public class App
         
         manager.addAccount(customer1);
         manager.addAccount(customer2);
-        manager.accountDisplay();
+     
        
         Gson gson = new Gson();
         String json = gson.toJson(manager.accountList);

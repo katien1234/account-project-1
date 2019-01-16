@@ -21,6 +21,8 @@ public class AppTDD {
 
 		Account customer1 = new Account("jimmy", "neutron", 1);
 		Account customer2 = new Account("John", "Doe", 2);
+		Account customer3 = new Account("jimmy", "doe", 3);
+		manager.addAccount(customer3);
 
 		manager.addAccount(customer1);
 		manager.addAccount(customer2);
@@ -35,9 +37,14 @@ public class AppTDD {
 	
 	@Test
 	public void hashMapTest() {
-		assertEquals(2,manager.accountList.size());
+		assertEquals(3,manager.accountList.size());
 	}
 	
-	
+	@Test
+	public void firstNameSearch() {
+		
+		assertEquals(2,manager.searchByName("jimmy"));
+	}
 
+	
 }
