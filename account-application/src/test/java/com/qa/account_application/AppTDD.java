@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.qa.accountapplication.Account;
+import com.qa.accountapplication.Service;
+
 public class AppTDD {
 	
 	Service manager = new Service();
@@ -34,5 +37,7 @@ public class AppTDD {
 	public void hashMapTest() {
 		assertEquals(2,manager.accountList.size());
 	}
+	
+	
 
 }
