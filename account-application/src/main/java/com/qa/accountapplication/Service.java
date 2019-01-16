@@ -1,13 +1,13 @@
-package com.qa.account_application;
+package com.qa.accountapplication;
 
 import java.util.HashMap;
-import java.util.Map;
+
 
 public class Service {
 	
 
 
-HashMap<Integer, Account> accountList = new HashMap<Integer, Account>();
+public HashMap<Integer, Account> accountList = new HashMap<Integer, Account>();
 
 
 	

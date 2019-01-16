@@ -1,4 +1,6 @@
-package com.qa.account_application;
+package com.qa.accountapplication;
+
+import com.google.gson.Gson;
 
 /**
  * Hello world!
@@ -22,7 +24,9 @@ public class App
         manager.addAccount(customer2);
         manager.accountDisplay();
        
-        
+        Gson gson = new Gson();
+        String json = gson.toJson(manager.accountList);
+        System.out.println(json);
         
     }
 }
