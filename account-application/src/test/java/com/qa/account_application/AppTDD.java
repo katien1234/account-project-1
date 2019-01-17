@@ -13,7 +13,7 @@ public class AppTDD {
 	Service manager = new Service();
 
 	@Before
-	public void beforeStuff() {
+	public void setUp() {
 
 		
 
@@ -23,7 +23,6 @@ public class AppTDD {
 		Account customer2 = new Account("John", "Doe", 2);
 		Account customer3 = new Account("jimmy", "doe", 3);
 		manager.addAccount(customer3);
-
 		manager.addAccount(customer1);
 		manager.addAccount(customer2);
 	}
